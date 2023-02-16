@@ -1,0 +1,100 @@
+body {
+    /**background-color: #912555;**/
+
+
+      perspective: 1800px;
+      font-family: Arial;
+  
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+  .contenedor {
+      width: 600px;
+  
+      display: inline-block;
+      margin-top:100px;
+      transform-style: preserve-3d;
+  
+      padding: 30px 35px;
+      background: #fff;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.17);
+  
+      transform-origin: 50% 50%;
+      transform: rotateX(11deg) rotateY(16.5deg);
+  }
+  .ajuste {
+      display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 275px;
+  }
+  .contenedor h1 {
+      color: #3e3e42;
+      margin-bottom: 30px;
+      transform: translateZ(35px);
+  }
+  .contenedor .card {
+      width: 175px;
+      height: 250px;
+      
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      
+      position: relative;
+      perspective: 1200px;
+      transform: translatez(35px);
+      transition: all 200ms ease-out;
+  }
+  .contenedor .card:hover {
+    width: 200px;
+    height: 275px;
+  }
+  .card .card_bg {
+      bottom: -50px;
+      left: -50px;
+      right: -50px;
+      top: -50px;
+      position: absolute;
+      transform: translateZ(-50px);
+    
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .card_one .card_bg {background: url('https://www.lagzero.net/wp-content/uploads/2013/08/GTAV_online_06.jpg');}
+  .card_two .card_bg {background: url('https://www.edreams.es/blog/wp-content/uploads/sites/5/2013/10/GTA-5-Vinewood.-Foto-de-Nick-Hide.jpg');}
+  .card_three .card_bg {background: url('https://www.playerone.vg/wp-content/uploads/2019/07/LOS-SANTOS-LOS-ANGELES.jpg');}
+  
+  .card .card_img {
+      position: relative;
+      height: 100%;
+    bottom: -20px;
+  }
+  
+  .card .card_text {
+      height: 4em;
+      width: 100%;
+      
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%);
+      
+      position: absolute;
+      bottom: 0;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+  }
+  .card .card_text p {
+      padding: 0 10px;
+      margin-bottom: 3px;
+  }
